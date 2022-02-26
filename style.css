@@ -1,0 +1,1808 @@
+body {
+  margin-top: 0px;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 0px;
+  transition: background-color 2s, color 2s;
+  background-color: white;
+  color: black;
+  position: relative;
+}
+
+.group1 {
+  position: relative;
+  margin-left: 250px;
+  top: 85px;
+  max-width: 1100px;
+}
+
+.highlight {
+  width: 40%;
+  left: 50%;
+  top: -50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  z-index: 4;
+  background-color: white;
+  /* padding: 40px; */
+  display: block;
+}
+
+.highlight-invert {
+  width: 40%;
+  left: 50%;
+  top: -50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  z-index: 4;
+  background-color: black;
+  /* padding: 40px; */
+  display: block;
+}
+
+.highlight-long {
+  width: auto;
+  height: 800px;
+  left: 50%;
+  top: -50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  z-index: 4;
+  background-color: white;
+  /* padding: 40px; */
+  display: block;
+}
+
+.highlight-long-invert {
+  width: auto;
+  height: 800px;
+  left: 50%;
+  top: -50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  z-index: 4;
+  background-color: black;
+  /* padding: 40px; */
+  display: block;
+}
+
+@media only screen and (max-height: 480px) {
+  .highlight {
+    height: 350px;
+  }
+
+  .highlight-long-invert {
+    height: 350px;
+  }
+}
+
+@media only screen and (max-height: 530px) and (min-height: 480px) {
+  .highlight {
+    height: 400px;
+  }
+
+  .highlight-long-invert {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-height: 580px) and (min-height: 530px) {
+  .highlight {
+    height: 450px;
+  }
+
+  .highlight-long-invert {
+    height: 450px;
+  }
+}
+
+@media only screen and (max-height: 630px) and (min-height: 580px) {
+  .highlight {
+    height: 500px;
+  }
+
+  .highlight-long-invert {
+    height: 500px;
+  }
+}
+
+@media only screen and (max-height: 680px) and (min-height: 630px) {
+  .highlight {
+    height: 550px;
+  }
+
+  .highlight-long-invert {
+    height: 550px;
+  }
+}
+
+@media only screen and (max-height: 730px) and (min-height: 680px) {
+  .highlight {
+    height: 600px;
+  }
+
+  .highlight-long-invert {
+    height: 600px;
+  }
+}
+
+.blurry {
+  position: fixed;
+  width: 110%;
+  height: 100%;
+  top: 0px;
+  left: -5%;
+  background-color: black;
+  opacity: 0.9;
+  z-index: 3;
+}
+
+.animateDown {
+  animation: animateDown ease-out 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animateDown {
+  0% {
+    top: -50%;
+  }
+
+  100% {
+    top: 50%;
+  }
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.no-hover {
+  color: black;
+  text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  display: inline;
+  padding: 10px;
+}
+
+b {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+a:hover {
+  color: lightgrey;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline solid black;
+}
+
+/*----------------------------------------------------top menu [style] */
+
+
+.topMenu {
+  height: 75px;
+  width: 90%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: black solid 1px;
+  transition: color 2s, background-color 2s;
+  background-color: white;
+  color: black;
+  z-index: 1;
+  margin-top: 0px;
+}
+
+.menuu  {
+  margin-top: 48px;
+}
+
+.menuu a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.menuu a:hover {
+  color: lightgrey;
+}
+
+/* ---------------------------------------------------home */
+
+.info {
+  position: fixed;
+  margin-top: 85px;
+  right: 5%;
+  max-width: 200px;
+}
+
+.social-icon {
+  width: 18px;  
+}
+
+/*----------------------------------------------------works menu [style] */
+
+#workmenu {
+  position: fixed; 
+  margin-top: 80px;
+  font-size: 16px;
+  width: 225px;
+}
+
+.icon {
+  float: right;
+}
+
+/*----------------------------------------------------content [style] */
+.text {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 20;
+  color: white;
+  background-color: black;
+  opacity: 0.8;
+  font-size: 18px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  padding-top: 20%;
+  display: none;
+} 
+/*----------------------------------------------------images [style] */
+
+.imageContainer {
+  position: relative;
+  margin-left: 300px;
+  top: 85px;
+  padding-top: 10px;
+  width: 1300px;
+  max-width: 1300px;
+}
+
+.flexBox {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.flexImage {
+  width: 300px;
+  height: 175px;
+  overflow: hidden;
+  margin: 3px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+
+/* ---------------------------------------------------Bio */
+.img-text {
+  font-style: italic;
+  font-weight: lighter;
+  font-family: Arial, narrow;
+  margin-top: 6px;
+}
+
+#Bio_text {
+  font-family: Arial, narrow;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 10;
+  margin-top: 80px;
+  width: 40%;
+  display: inline-block;
+}
+
+figure {
+  display: inline-block;
+  width: 50%;
+  margin-top: 80px;
+  vertical-align: top;
+}
+
+figure img {
+  width: 100%;
+}
+
+figcaption {
+  font-weight: bold;
+} 
+
+/* ---------------------------------------------------CV */
+
+.cvEntry {
+  font-size: 10px;
+  position: absolute;
+  top: 80px;
+}
+
+/*----------------------------------------------------pages */
+
+.group {
+  position: relative;
+  margin-left: 250px;
+  top: 85px;
+  width: 900px;
+  max-width: 900px;
+}
+
+h1 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 20;
+} 
+
+h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 17px;
+}
+
+.margin {
+  margin: 0px;
+  font-size: 13px;
+}
+
+.left {
+  display: inline-block;
+  width: 51%;
+}
+
+.information {
+  border-top: solid 1px #8c8b8b;
+  border-bottom: solid 1px #8c8b8b;
+  padding-bottom: 12px;
+}
+
+#Collaborators {
+  font-family: Arial, narrow;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 10;
+  text-align: left;
+  text-decoration: none !important;
+}
+
+#Software {
+  font-family: Arial, narrow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 10;
+  text-decoration: none !important;
+  margin-top: 12px;
+}
+
+#Location {
+  font-family: Arial, narrow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 10;
+  text-decoration: none !important;
+  margin-top: 12px;
+}
+
+#Text {
+  font-family: Arial, narrow;
+  font-style: normal;
+  font-weight: 10;
+  text-decoration: none !important;
+  font-size: 16px;
+}
+
+#About {
+  font-family: Arial, narrow;
+  font-style: normal;
+  font-weight: 10;
+  text-decoration: none !important;
+  font-size: 18px;
+  margin-top: 15px;
+  border-bottom: 1px solid #8c8b8b;
+  padding-bottom: 10px; 
+  margin-bottom: 10px; 
+}
+
+#Materials {
+  font-family: Arial, narrow;
+  font-style: normal;
+  font-weight: 10;
+  text-decoration: none !important;
+  font-size: 16px;
+  margin-top: 12px;
+  vertical-align: top;
+  margin-right: 25px;
+  display: inline-block;
+  width: 45%;
+}
+
+#Concept {
+  font-size: 14px;
+}
+
+.title {
+  font-family: 'Hind', sans-serif;
+  font-style: normal;
+  font-weight: 10;
+  text-align: left;
+  text-decoration: none !important;
+  font-size: 44px;
+}
+
+.subtitle {
+  font-family: 'Hind', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 10;
+  text-decoration: none !important;
+  margin-bottom: 12px;
+}
+
+#workinfinit {
+   background-color: black;
+   color: white;
+}
+
+#collab {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 24px;
+}
+
+p {
+  font-family: 'Arial, narrow', sans-serif;
+  font-size: 14px; 
+}
+
+.soundcloud {
+  height: 110px;
+}
+
+.soundcloud-text {
+  font-size: 10px;
+}
+
+.video {
+  height: 600px;
+}
+
+
+
+.soundcloud-height {
+  height: 166px;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+.simulations, .transcriptions, .collaborations {
+  display: none;
+}
+
+#slideshow {
+  position: absolute;
+  top: 93px;
+  right: 240px;
+  left: 5%;
+  height: 700px;
+  /* overflow: hidden;  */
+  border-radius: 5px;
+  max-width: 1300px;
+}
+
+#slideshow img {
+  display: none;
+  width: 100%;
+}
+
+.device {
+  display: none;
+}
+
+.dot {
+  height: 50px;
+  width: 50px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: none;
+  transition: background-color 0.6s ease;
+  margin: 25px 15px;
+}
+
+@media only screen and (max-height: 530px) and (min-height: 480px) {
+  #slideshow {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-height: 580px) and (min-height: 530px) {
+  #slideshow {
+    height: 450px;
+  }
+}
+
+@media only screen and (max-height: 630px) and (min-height: 580px) {
+  #slideshow {
+    height: 500px;
+  }
+}
+
+@media only screen and (max-height: 680px) and (min-height: 630px) {
+  #slideshow {
+    height: 550px;
+  }
+}
+
+@media only screen and (max-height: 730px) and (min-height: 680px) {
+  #slideshow {
+    height: 600px;
+  }
+}
+
+@media only screen and (max-height: 780px) and (min-height: 730px) {
+  #slideshow {
+    height: 650px;
+  }
+}
+
+@media only screen and (max-height: 830px) and (min-height: 780px) {
+  #slideshow {
+    height: 700px;
+  }
+}
+
+.glitch {
+  position: relative;
+  text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+    0.025em 0.04em 0 #fffc00;
+  animation: glitch 725ms;
+  animation-iteration-count: 5;
+}
+
+.glitch span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.glitch span:first-child {
+  animation: glitch 500ms infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+  transform: translate(-0.04em, -0.03em);
+  opacity: 0.75;
+}
+
+.glitch span:last-child {
+  animation: glitch 375ms infinite;
+  clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+  transform: translate(0.04em, 0.03em);
+  opacity: 0.75;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+      0.025em 0.04em 0 #fffc00;
+  }
+  15% {
+    text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+      0.025em 0.04em 0 #fffc00;
+  }
+  16% {
+    text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
+      -0.05em -0.05em 0 #fffc00;
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
+      -0.05em -0.05em 0 #fffc00;
+  }
+  50% {
+    text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
+      0 -0.04em 0 #fffc00;
+  }
+  99% {
+    text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
+      0 -0.04em 0 #fffc00;
+  }
+  100% {
+    text-shadow: -0.05em 0 0 #00fffc, -0.025em -0.04em 0 #fc00ff,
+      -0.04em -0.025em 0 #fffc00;
+  }
+}
+
+/* -------------------------------------------------- */
+
+.distort {
+  animation: distort 1.5s linear 5;
+}
+
+@keyframes distort{
+  2%,64%{
+    transform: translate(2px,0) skew(0deg);
+  }
+  4%,60%{
+    transform: translate(-2px,0) skew(0deg);
+  }
+  62%{
+    transform: translate(0,0) skew(20deg); 
+  }
+}
+
+@media only screen and (max-width: 1750px) {
+  .group {
+    width: 1300px;
+  }
+}
+
+@media only screen and (max-width: 1675px) {
+  .group {
+    width: 1225px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .imageContainer {
+    width: 1150px;
+    max-width: 1150px;
+  }
+  .group {
+    width: 1150px;
+  }
+}
+
+@media only screen and (max-width: 1525px) {
+  .imageContainer {
+    width: 1075px;
+    max-width: 1075px;
+  }
+  .group {
+    width: 1075px;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .imageContainer {
+    width: 1000px;
+  }
+
+  .group {
+    width: 1000px;
+  }
+}
+
+@media only screen and (max-width: 1375px) {
+   .imageContainer {
+    width: 925px;
+  }
+
+  .flexImage {
+    width: 275px;
+    height: 160px;
+  }
+
+  .group {
+    width: 925px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+   .imageContainer {
+    width: 850px;
+  }
+
+  .flexImage {
+    width: 250px;
+    height: 145px;
+  }
+
+  .group {
+    width: 850px;
+  }
+}
+
+@media only screen and (max-width: 1225px) {
+   .imageContainer {
+    width: 775px;
+  } 
+
+  .flexImage {
+    width: 225px;
+    height: 130px;
+  }
+
+  .group {
+    width: 775px;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .imageContainer {
+    width: 700px;
+  }
+
+  .group {
+    width: 700px;
+  }
+}
+
+@media only screen and (max-width: 1075px) {
+   .imageContainer {
+    width: 625px;
+  } 
+
+  .flexImage {
+    width: 300px;
+    height: 175px;
+  }
+
+  .group {
+    width: 625px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .imageContainer {
+    width: 560px;
+  } 
+
+  .flexImage {
+    width: 265px;
+    height: 160px;
+  }
+
+  .group {
+    width: 550px;
+  }
+}
+
+@media only screen and (max-width: 925px) {
+  .imageContainer {
+    width: 475px;
+  }
+
+  .flexImage {
+    width: 225px;
+    height: 130px;
+  }
+}
+
+ @media only screen and (max-width: 750px) {
+  .imageContainer {
+    width: 400px;
+  }
+
+  #slideshow {
+    right: 250px;
+  }
+
+  .flexImage {
+    width: 300px;
+    height: 175px;
+  }
+} 
+.ss-res {
+  width: 100%;
+  height: 900px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ss-res img {
+  position: absolute;
+  left: 100%;
+  top: 0px;
+  transition: left 1s;
+}
+
+#ss1 {
+  left: 0px;
+}
+
+.next, .prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 15px;
+  background-color: lightgrey;
+  opacity: 0.9;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.next {
+  right: 6px;
+}
+
+.prev {
+  left: 6px;
+}
+
+.button:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+}
+ 
+.dot-res {
+  height: 8px;
+  width: 8px;
+  background-color: lightgrey;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin: 25px 15px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+@media only screen 
+  and (max-device-width: 820px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .dot-res {
+    height: 50px;
+    width: 50px;
+  }
+
+  .ss-res {
+    height: 1000px;
+  }
+
+  .next, .prev {
+    font-size: 50px;
+    padding: 30px;
+  }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1366px)
+  and (min-device-height: 768px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .dot-res {
+      height: 50px;
+      width: 50px;
+  }
+
+  .ss-res {
+    height: 2000px;
+  }
+
+  .next, .prev {
+    font-size: 80px;
+    padding: 50px;
+  }
+  }
+
+/* --------------mobile devices ------------------------- */
+
+/* Portrait and Landscape  pr 2*/
+@media only screen 
+  and (max-device-width: 820px) 
+  and (-webkit-min-device-pixel-ratio: 2){  
+    .topMenu {
+      height: 220px;
+      z-index: 2;
+      background-color: white;
+      top: 0px;
+    }
+
+    .social-icon {
+      margin-right: 12px;  
+    }
+
+    body {
+      background-color: white;
+    }
+
+    .simulations, .open-simulations, .transcriptions, .open-transcriptions, .collaborations, .open-collaborations {
+      color: black;
+    }
+    
+    .menuu  {
+      margin-top: 130px;
+    }
+    
+    .menuu a, .menuu b {
+      font-size: 55px;
+      padding: 10px;
+  
+    }
+    
+     h1 {
+      font-size: 100px;
+    } 
+
+    .info {
+      position: fixed;
+      margin-top: 220px;
+      right: 5%;
+      font-size: 35px;
+      max-width: 500px;
+    }
+
+    .upcoming p {
+      font-size: 28px;
+    }
+
+    .contact h2 {
+      font-size: 35px
+    }
+
+    .contact p {
+      font-size: 30px;
+    }
+
+
+    #slideshow {
+      overflow: visible;
+    }
+
+    #Bio_text {
+      float: left;
+      margin-top: 225px;
+    }
+
+    #Bio_text p {
+      font-size: 35px;
+    }
+
+    figcaption i {
+      font-size: 45px;
+    }
+
+    #workmenu {
+      position: fixed; 
+      margin-top: 225px;
+      font-size: 55px;
+      width: 600px;
+    }
+
+    .imageContainer {
+      margin-left: 450px;
+      top: 225px;
+      padding-top: 10px;
+      width: 900px;
+      max-width: 900px;
+    }
+    
+    .flexImage {
+      width: 600px;
+      height: 350px;
+    }
+
+    .cvEntry {
+      top: 225px;
+      margin-right: 5%;
+    }
+
+    .cvEntry p {
+      font-size: 40px;
+    }
+
+    .group {
+        margin-left: 0px;
+        top: 225px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .flexBox {
+      margin-bottom: 100px;
+    }
+
+    .title {
+      font-size: 80px;
+    }
+
+    .subtitle {
+      font-size: 60px;
+    }
+
+    #collab {
+      font-size: 60px;
+    }
+
+    #Location {
+      overflow: hidden;
+    }
+
+    .information b {
+      font-size: 60px;
+    }
+
+    .information p {
+      font-size: 40px;
+    }
+
+    #About {
+      margin-top: 100px;
+      margin-bottom: 100px;
+      font-size: 40px;
+    }
+
+    #About b {
+      font-size: 60px;
+    }
+
+    #About p {
+      font-size: 40px;
+    }
+
+    #About i {
+      font-size: 40px;
+    }
+
+    #About u {
+      font-size: 60px;
+    }
+
+    #Text {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+
+    #Text b {
+      font-size: 60px;
+    }
+
+    #Text p {
+      font-size: 40px;
+    }
+
+    #time1-img {
+      width: 32%;
+    }
+      
+    .text {
+      font-size: 50px;
+    } 
+
+    
+
+#Concept {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+    #Concept b {
+      font-size: 60px;
+    }
+
+    #Concept p {
+      font-size: 40px;
+    }
+
+    .soundcloud {
+      height: 200px;
+    }
+
+    .soundcloud-text {
+      display: none;
+    }
+
+    .video {
+      height: 1000px;
+    }
+
+    iframe {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+
+    .dot {
+      display: inline-block;
+    }
+}
+
+/* Portrait  pr 2*/
+@media only screen 
+  
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+    #slideshow {
+      top: 250px;
+      right: 550px;
+      left: 80px;
+      height: 2700px;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    #Bio_text {
+      width: 90%;
+      display: block;
+    }
+
+    figure {
+      display: block;
+      width: 100%;
+      margin-top: 20px;
+      margin-left: 0px;
+      float: left;
+    }
+      
+    figure img {
+      width: 100%;
+    }
+   
+    #workmenu {
+      display: none;
+    }
+
+    .imageContainer {
+      margin-left: 0px;
+      top: 225px;
+      padding-top: 10px;
+      width: 100%;
+      max-width: 100%;
+    }
+    
+    .device {
+      display: block;
+      font-size: 40px;
+    }
+}
+
+/* Landscape pr 2*/
+/* @media only screen 
+
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {  */
+
+    @media only screen 
+  and (max-device-width: 820px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    #slideshow {
+      top: 250px;
+      right: 25%;
+      left: 5%;
+      height: 800px;
+      border-radius: 5px;
+    }
+
+    #Bio_text {
+      width: 48%;
+    }
+
+    figure {
+      margin-top: 225px;
+      width: 48%;
+    }
+
+    .imageContainer {
+      margin-left: 35%;
+      top: 225px;
+      padding-top: 10px;
+      width: 65%;
+      max-width: 65%;
+    }
+    
+    .flexImage {
+      width: 750px;
+      height: 420px;
+    }
+
+    .group {
+      margin-left: 5%;
+      width: 80%;
+    }
+}
+
+
+/* Portrait and Landscape pr 3 */
+/* @media only screen 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .topMenu {
+      height: 220px;
+    }
+    
+    .menuu  {
+      margin-top: 130px;
+    }
+    
+    .menuu a, .menuu b {
+      font-size: 55px;
+      padding: 10px;
+  
+    }
+    
+     h1 {
+      font-size: 100px;
+    } 
+
+    .info {
+      position: fixed;
+      margin-top: 220px;
+      right: 5%; */
+      /* font-size: 25px; */
+    /* } */
+
+    /* .contact h2 {
+      font-size: 40px;
+    }
+
+    .contact p {
+      font-size: 35px;
+    }
+
+    .social {
+      font-size: 35px;
+    }
+    
+    .social-icon {
+      width: 18px;  
+    }
+
+    #slideshow {
+      overflow: visible;
+    }
+
+    #Bio_text {
+      float: left;
+      margin-top: 225px;
+    }
+
+    #Bio_text p {
+      font-size: 35px;
+    }
+
+    figcaption {
+      font-size: 24px;
+    }
+
+    .group {
+      top: 225px;
+    }
+
+    .information b {
+      font-size: 40px;
+    }
+
+    .information p {
+      font-size: 25px;
+    }
+
+    .title {
+      font-size: 80px;
+    }
+
+    .subtitle {
+      font-size: 60px;
+    }
+
+    #About {
+      font-size: 40px;
+    }
+
+    #About p {
+      font-size: 32px;
+    }
+
+    #Text {
+      font-size: 40px;
+    }
+
+    #Text p {
+      font-size: 32px;
+    } */
+
+    /* .text {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 20;
+      color: white;
+      background-color: black;
+      opacity: 0.5;
+      font-size: 30px;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+      padding-top: 20%;
+      display: block;
+    }  */
+/* } */
+
+/* Landscape pr 3*/
+@media only screen 
+  and (max-device-width: 812px)
+  and (min-device-width: 737px)
+  and (max-device-height: 375px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    #slideshow {
+      top: 250px;
+      right: 25%;
+      left: 5%;
+      height: 1200px;
+      overflow: hidden;
+      border-radius: 5px;
+    }
+
+    #Bio_text {
+      width: 48%;
+      margin-top: 225px;
+    }
+
+    #Bio_text p {
+      font-size: 35px;
+    }
+
+    figure {
+      margin-top: 325px;
+      width: 48%;
+    }
+
+    .cvEntry {
+      top: 225px;
+      margin-right: 5%;
+    }
+
+    .cvEntry p {
+      font-size: 40px;
+    }
+
+    .imageContainer {
+      margin-left: 750px;
+      top: 225px;
+      padding-top: 10px;
+      width: 2000px;
+      max-width: 2000px;
+    }
+    
+    .flexImage {
+      width: 600px;
+      height: 350px;
+    }
+
+    #workmenu {
+      position: fixed; 
+      margin-top: 225px;
+      font-size: 55px;
+      width: 600px;
+    }
+
+    .group {
+      margin-left: 10%;
+      width: 80%;
+      max-width: 80%;
+    }
+
+    .topMenu {
+      height: 220px;
+      z-index: 2;
+      background-color: white;
+      top: 0px;
+    }
+
+    body {
+      background-color: white;
+    }
+
+    .simulations, .open-simulations, .transcriptions, .open-transcriptions, .collaborations, .open-collaborations {
+      color: black;
+    }
+    
+    .menuu  {
+      margin-top: 130px;
+    }
+    
+    .menuu a, .menuu b {
+      font-size: 55px;
+      padding: 10px;
+  
+    }
+    
+     h1 {
+      font-size: 100px;
+    } 
+
+    .info {
+      position: fixed;
+      margin-top: 220px;
+      right: 5%;
+      font-size: 35px;
+    }
+
+    .contact h2 {
+      font-size: 35px
+    }
+
+    .contact p {
+      font-size: 30px;
+    }
+
+    figcaption i {
+      font-size: 45px;
+    }
+
+    .flexBox {
+      margin-bottom: 100px;
+    }
+
+    .title {
+      font-size: 80px;
+    }
+
+    .subtitle {
+      font-size: 60px;
+    }
+
+    #collab {
+      font-size: 60px;
+    }
+
+    #Location {
+      overflow: hidden;
+    }
+
+    .information b {
+      font-size: 60px;
+    }
+
+    .information p {
+      font-size: 40px;
+    }
+
+    #About {
+      margin-top: 100px;
+      margin-bottom: 100px;
+      font-size: 40px;
+    }
+
+    #About b {
+      font-size: 60px;
+    }
+
+    #About p {
+      font-size: 40px;
+    }
+
+    #About i {
+      font-size: 40px;
+    }
+
+    #About u {
+      font-size: 60px;
+    }
+
+    #Text {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+
+    #Text b {
+      font-size: 60px;
+    }
+
+    #Text p {
+      font-size: 40px;
+    }
+
+    #time1-img {
+      width: 32%;
+    }
+      
+    .text {
+      font-size: 50px;
+    } 
+
+    
+
+#Concept {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+    #Concept b {
+      font-size: 60px;
+    }
+
+    #Concept p {
+      font-size: 40px;
+    }
+
+    .soundcloud {
+      height: 200px;
+    }
+
+    .soundcloud-text {
+      display: none;
+    }
+
+    .video {
+      height: 1400px;
+    }
+
+    iframe {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+
+    .dot {
+      display: inline-block;
+    }
+}
+
+
+
+/* Ipads */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1366px)
+  and (min-device-height: 768px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+      background-color: white;
+    }
+
+    .simulations, .open-simulations, .transcriptions, .open-transcriptions, .collaborations, .open-collaborations {
+      color: black;
+    }
+
+    .topMenu {
+      height: 220px;
+    }
+    
+    .menuu  {
+      margin-top: 130px;
+    }
+    
+    .menuu a, .menuu b {
+      font-size: 60px;
+      padding: 10px;
+    }
+    
+    h1 {
+      font-size: 100px;
+    } 
+
+    .info {
+      position: fixed;
+      margin-top: 220px;
+      right: 5%;
+      font-size: 45px;
+      max-width: 840px;
+    }
+
+    .info h2 {
+      font-size: 45px;
+    }
+
+    .info p {
+      font-size: 45px;
+    }
+    
+    .social-icon {
+      width: 25px;  
+      margin-right: 12px;
+    }
+
+    #slideshow {
+      top: 250px;
+      right: 950px;
+      left: 5%;
+      height: 2700px;
+      border-radius: 5px;
+    }
+
+    #Bio_text {
+      float: left;
+      margin-top: 225px;
+      font-size: 45px;
+      width: 45%;
+    }
+
+    #Bio_text p {
+      font-size: 45px;
+    }
+
+    figure {
+      margin-top: 325px;
+      margin-left: 1%;
+      width: 50%;
+    }
+
+    figcaption i {
+      font-size: 35px;
+    }
+
+    #workmenu {
+      position: fixed; 
+      margin-top: 325px;
+      font-size: 40px;
+      width: 15%;
+    }
+
+    #workmenu a {
+      font-size: 60px;
+    }
+
+    #workmenu b {
+      font-size: 60px;
+    }
+    
+    .imageContainer {
+      margin-left: 22%;
+      top: 225px;
+      padding-top: 100px;
+      width: 80%;
+      max-width: 80%;
+    }
+
+    .flexBox {
+      margin-bottom: 100px;
+    }
+    
+    .flexImage {
+      width: 900px;
+      height: 525px;
+    }
+    
+    .cvEntry {
+      top: 225px;
+      margin-right: 5%;
+    }
+    
+    .cvEntry p {
+      font-size: 55px;
+    }
+    
+    .group {
+        margin-left: 0px;
+        top: 225px;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .information b {
+      font-size: 60px;
+    }
+    
+    .information p {
+      font-size: 40px;
+    }
+
+    #collab {
+      font-size: 75px;
+    }
+    
+    #time1-img {
+      width: 32%;
+    }
+
+    .title {
+      font-size: 95px;
+    }
+
+    .subtitle {
+      font-size: 75px;
+    }
+
+    #About {
+      font-size: 45px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    #About b {
+      font-size: 60px;
+    }
+
+    #About p {
+      font-size: 45px;
+    }
+
+    #About i {
+      font-size: 45px;
+    }
+
+    #About u { 
+      font-size: 60px;
+    }
+    
+    #Text {
+      font-size: 45px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    #Text b {
+      font-size: 60px;
+    }
+
+    #Text p {
+      font-size: 45px;
+    }
+
+    #Concept {
+      font-size: 45px;
+    }
+
+    #Concept b {
+      font-size: 60px;
+    }
+
+    #Concept p {
+      font-size: 45px;
+    }
+
+    .text {
+      font-size: 75px;
+    }
+
+    .soundcloud {
+      height: 150px;
+    }
+
+    .soundcloud-text {
+      font-size: 30px;
+    }
+
+    .video {
+      height: 1700px;
+    } 
+
+    iframe {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    .dot {
+      display: inline-block;
+    }
+
+}
+
+/* ipad landscape ---------------- */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1366px)
+  and (min-device-height: 768px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    #workmenu {
+      position: fixed; 
+      margin-top: 325px;
+      font-size: 40px;
+      width: 15%;
+      display: block;
+    }
+
+    .group {
+      margin-left: 20%;
+      top: 225px;
+      width: 80%;
+      max-width: 80%;
+  }
+  }
+
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1366px)
+  and (min-device-height: 768px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .imageContainer {
+      margin-left: 0px;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    #workmenu {
+      display: none;
+    }
+  }
