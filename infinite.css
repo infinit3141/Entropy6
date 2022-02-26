@@ -1,0 +1,100 @@
+.outer-circle {
+  width: 800px;
+  height: 800px;
+  background: red;
+  border-radius: 50%;
+  position: relative;
+}
+
+.inner-circle {
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+/* .right,
+.left {
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  border: 1px solid black;
+}
+
+.right {
+  left: 50%;
+}
+
+.left {
+  left: 50%;
+  transform: translate(-100%);
+} */
+
+.slice-one {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 0;
+  left: 50%;
+  background: blueviolet;
+  transform: rotate(0deg) skewY(-60deg);
+}
+
+/* .slice-two {
+  top: 0;
+  background: brown;
+  clip-path: polygon(100% 100%, 0 100%, 100% 0);
+}
+
+.slice-three {
+  top: 50%;
+  background: burlywood;
+  clip-path: polygon(100% 100%, 0 0, 100% 0);
+}
+
+.slice-four {
+  top: 50%;
+  background: cadetblue;
+  clip-path: polygon(0 100%, 0 0, 100% 100%);
+}
+
+.slice-five {
+  top: 50%;
+  background: chartreuse;
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+}
+
+.slice-six {
+  top: 50%;
+  background: chocolate;
+  clip-path: polygon(0 100%, 0 0, 100% 0);
+}
+
+.slice-seven {
+  top: 0;
+  background: cyan;
+  clip-path: polygon(0 100%, 0 0, 100% 100%);
+}
+
+.slice-eight {
+  top: 0;
+  background: hotpink;
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.overlay {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  opacity: 0;
+}
+
+.overlay:hover {
+  opacity: 0.5;
+} */
