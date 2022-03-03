@@ -18,6 +18,7 @@ Entropy6 - Tree Website structure of ⵣ
 - responsive to cursor on wheel (appearance image)
 
 I - ⦿ ✴︎ ⚡︎ ꘩ ⚡︎ 𓄿 ⦿ (Lightblue on Black)
+
 II - ꔛ ◌ 𖡎 𖨁 𖡎 𓆙 ꔛ (Yellow on Black)
 III - Ꮘ ◼ ꋝ 𖤾 ꋝ 𐀏 Ꮘ (Red on Black)
 IV - ⚘ ✺ ᱰ 𖦔 ᱰ 𐁔 ⚘ (Black on Red)
