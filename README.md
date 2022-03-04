@@ -2,6 +2,8 @@ Entropy6 - Tree Website structure of ⵣ
 
 **MAIN PAGE**
 
+[websiteDraft.pdf](https://github.com/infinit3141/Entropy6/files/8187671/websiteDraft.pdf)
+
 ✺ ⵣ
 
 ✺ The Era
