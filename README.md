@@ -2,7 +2,7 @@ Entropy6 - Tree Website structure of ⵣ
 
 **MAIN PAGE**
 
-[websiteDraft.pdf](https://github.com/infinit3141/Entropy6/files/8187671/websiteDraft.pdf)
+![websiteDraft](https://user-images.githubusercontent.com/94471871/156811196-44c124f3-c99f-45d9-a214-198f78ac8e8b.jpg)
 
 ✺ ⵣ
 
